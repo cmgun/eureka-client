@@ -2,7 +2,6 @@ package com.cmgun;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * Spring Boot Application
@@ -10,7 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  *
  * Created by cmgun on 2019/5/22
  */
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 @SpringBootApplication
 public class Application {
 

@@ -1,0 +1,64 @@
+POST http://localhost:8081/test/date
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "data": {     "date":"2020-08-14 12"   } }
+
+<> 2020-08-14T112704.400.json
+
+###
+
+POST http://localhost:8081/test/date
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "data": {     "date":"2020-08-14"   } }
+
+<> 2020-08-14T112645.200.json
+
+###
+
+POST http://localhost:8081/test/date
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "data": {     "date":"2020-08-14"   } }
+
+<> 2020-08-14T112547.200.json
+
+###
+
+POST http://localhost:8081/test/date
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{date:"2020-08-14"}
+
+<> 2020-08-14T112420.400.json
+
+###
+
+POST http://localhost:8081/test/date
+Accept: application/json
+Cache-Control: no-cache
+
+{date:"2020-08-14"}
+
+<> 2020-08-14T112327.415.json
+
+###
+
+POST http://localhost:8081/test/date
+Accept: */*
+Cache-Control: no-cache
+
+{date:"2020-08-14"}
+
+<> 2020-08-14T112306.415.json
+
+###
+
