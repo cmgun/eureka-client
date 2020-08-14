@@ -32,15 +32,6 @@ public class ExtMsgHttpMessageConverter extends AbstractGenericHttpMessageConver
         super(MediaType.APPLICATION_JSON);
     }
 
-    /**
-     * 请求消息转换，只处理统一标准请求 FinGatewayRequest.class
-     * 如果 FinGatewayRequest.class 与接口中参数类型的class不是由同一个classLoader加载，则此判断方法失效
-     *
-     * @param type
-     * @param contextClass
-     * @param mediaType
-     * @return
-     */
     @Override
     public boolean canRead(Type type, Class<?> contextClass, MediaType mediaType) {
         if (!canRead(mediaType)) {

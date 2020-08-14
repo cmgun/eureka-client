@@ -26,7 +26,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
     }
 
     /**
-     * 金单融处理特殊渠道的消息扩展转换
+     *  特殊渠道的消息扩展转换
      * @return
      */
     @Bean
