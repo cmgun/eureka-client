@@ -1,6 +1,7 @@
 package com.cmgun.controller;
 
 
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,8 +27,9 @@ public class BaseController {
 //        return "hello world";
 //    }
 
+    // {   "data": {     "date":"2020-08-14"   } }
     @PostMapping("/test/date")
-    public String testDate(@RequestBody Req<Entity> req) {
+    public String testDate(@Validated @RequestBody Req<Entity> req) {
         System.out.println(req.getData().getDate());
         return "hello world";
     }
